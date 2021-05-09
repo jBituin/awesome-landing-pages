@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Transition } from 'components';
+import { Transition } from '@headlessui/react';
 
 export const Features: React.FC = () => {
   const [tab, setTab] = useState(1);
@@ -172,11 +172,11 @@ export const Features: React.FC = () => {
                   appear={true}
                   className='w-full'
                   enter='transition ease-in-out duration-700 transform order-first'
-                  enterStart='opacity-0 translate-y-16'
-                  enterEnd='opacity-100 translate-y-0'
+                  enterFrom='opacity-0 translate-y-16'
+                  enterTo='opacity-100 translate-y-0'
                   leave='transition ease-in-out duration-300 transform absolute'
-                  leaveStart='opacity-100 translate-y-0'
-                  leaveEnd='opacity-0 -translate-y-16'
+                  leaveFrom='opacity-100 translate-y-0'
+                  leaveTo='opacity-0 -translate-y-16'
                 >
                   <div className='relative inline-flex flex-col'>
                     <img
@@ -202,11 +202,11 @@ export const Features: React.FC = () => {
                   appear={true}
                   className='w-full'
                   enter='transition ease-in-out duration-700 transform order-first'
-                  enterStart='opacity-0 translate-y-16'
-                  enterEnd='opacity-100 translate-y-0'
+                  enterFrom='opacity-0 translate-y-16'
+                  enterTo='opacity-100 translate-y-0'
                   leave='transition ease-in-out duration-300 transform absolute'
-                  leaveStart='opacity-100 translate-y-0'
-                  leaveEnd='opacity-0 -translate-y-16'
+                  leaveFrom='opacity-100 translate-y-0'
+                  leaveTo='opacity-0 -translate-y-16'
                 >
                   <div className='relative inline-flex flex-col'>
                     <img
@@ -232,11 +232,11 @@ export const Features: React.FC = () => {
                   appear={true}
                   className='w-full'
                   enter='transition ease-in-out duration-700 transform order-first'
-                  enterStart='opacity-0 translate-y-16'
-                  enterEnd='opacity-100 translate-y-0'
+                  enterFrom='opacity-0 translate-y-16'
+                  enterTo='opacity-100 translate-y-0'
                   leave='transition ease-in-out duration-300 transform absolute'
-                  leaveStart='opacity-100 translate-y-0'
-                  leaveEnd='opacity-0 -translate-y-16'
+                  leaveFrom='opacity-100 translate-y-0'
+                  leaveTo='opacity-0 -translate-y-16'
                 >
                   <div className='relative inline-flex flex-col'>
                     <img
