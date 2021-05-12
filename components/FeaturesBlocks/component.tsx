@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FeaturesBlocks: React.FC = () => {
+export const FeaturesBlocks: React.FC = () => {
   return (
     <section className='relative'>
       {/* Section background (needs .relative class on parent and next sibling elements) */}

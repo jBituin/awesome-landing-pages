@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   const [top, setTop] = useState(true);
 
   // detect whether user has scrolled the page down by 10px
