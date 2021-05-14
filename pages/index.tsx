@@ -1,10 +1,16 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import {
+  Hero,
+  Header,
+  Features,
+  FeaturesBlocks,
+  Testimonials,
+  Newsletter,
+} from 'components';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='flex flex-col min-h-screen overflow-hidden'>
       <Head>
         <title>Awesome Landing Pages</title>
         <meta
@@ -13,8 +19,21 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      {/*  Site header */}
+      <Header />
 
-      <main className={styles.main}></main>
+      {/*  Page content */}
+      <main className='flex-grow'>
+        {/*  Page sections */}
+        <Hero />
+        <Features />
+        <FeaturesBlocks />
+        <Testimonials />
+        <Newsletter />
+      </main>
+
+      {/*  Site footer */}
+      {/* <Footer /> */}
     </div>
   );
 }
